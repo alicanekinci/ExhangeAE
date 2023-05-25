@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "d5sBZyCVXdhuKIEHUDe6eRfkXze1FVIgFx/zVuCpt/A=",
+  "Source": "ExchangeAE.API",
+  "BasePath": "_content/ExchangeAE.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
