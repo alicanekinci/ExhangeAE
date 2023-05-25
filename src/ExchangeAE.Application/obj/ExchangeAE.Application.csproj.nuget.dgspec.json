@@ -4,6 +4,63 @@
     "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application/ExchangeAE.Application.csproj": {}
   },
   "projects": {
+    "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/ExchangeAE.Application.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/ExchangeAE.Application.Shared.csproj",
+        "projectName": "ExchangeAE.Application.Shared",
+        "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/ExchangeAE.Application.Shared.csproj",
+        "packagesPath": "/Users/macbookpro/.nuget/packages/",
+        "outputPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbookpro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj": {
+                "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application/ExchangeAE.Application.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -12,6 +69,69 @@
         "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application/ExchangeAE.Application.csproj",
         "packagesPath": "/Users/macbookpro/.nuget/packages/",
         "outputPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbookpro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/ExchangeAE.Application.Shared.csproj": {
+                "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/ExchangeAE.Application.Shared.csproj"
+              },
+              "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core/ExchangeAE.Core.csproj": {
+                "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core/ExchangeAE.Core.csproj"
+              },
+              "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.EntityFrameworkCore/ExchangeAE.EntityFrameworkCore.csproj": {
+                "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.EntityFrameworkCore/ExchangeAE.EntityFrameworkCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj",
+        "projectName": "ExchangeAE.Core.Shared",
+        "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj",
+        "packagesPath": "/Users/macbookpro/.nuget/packages/",
+        "outputPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core.Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/macbookpro/.nuget/NuGet/NuGet.Config"
@@ -37,6 +157,148 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core/ExchangeAE.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core/ExchangeAE.Core.csproj",
+        "projectName": "ExchangeAE.Core",
+        "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core/ExchangeAE.Core.csproj",
+        "packagesPath": "/Users/macbookpro/.nuget/packages/",
+        "outputPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbookpro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.EntityFrameworkCore/ExchangeAE.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.EntityFrameworkCore/ExchangeAE.EntityFrameworkCore.csproj",
+        "projectName": "ExchangeAE.EntityFrameworkCore",
+        "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.EntityFrameworkCore/ExchangeAE.EntityFrameworkCore.csproj",
+        "packagesPath": "/Users/macbookpro/.nuget/packages/",
+        "outputPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.EntityFrameworkCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbookpro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core/ExchangeAE.Core.csproj": {
+                "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core/ExchangeAE.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

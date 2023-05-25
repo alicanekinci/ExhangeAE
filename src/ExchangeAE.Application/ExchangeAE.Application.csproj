@@ -1,9 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\ExchangeAE.Application.Shared\ExchangeAE.Application.Shared.csproj" />
+    <ProjectReference Include="..\ExchangeAE.Core\ExchangeAE.Core.csproj" />
+    <ProjectReference Include="..\ExchangeAE.EntityFrameworkCore\ExchangeAE.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
 </Project>

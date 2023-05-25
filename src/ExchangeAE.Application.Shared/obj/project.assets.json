@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "ExchangeAE.Core.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ExchangeAE.Core.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExchangeAE.Core.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExchangeAE.Core.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj",
+      "msbuildProject": "../ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "ExchangeAE.Core.Shared >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/macbookpro/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/ExchangeAE.Application.Shared.csproj",
+      "projectName": "ExchangeAE.Application.Shared",
+      "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/ExchangeAE.Application.Shared.csproj",
+      "packagesPath": "/Users/macbookpro/.nuget/packages/",
+      "outputPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/macbookpro/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj": {
+              "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
