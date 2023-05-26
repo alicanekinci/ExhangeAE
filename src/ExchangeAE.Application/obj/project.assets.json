@@ -9585,6 +9585,7 @@
     "net7.0": [
       "ExchangeAE.Application.Shared >= 1.0.0",
       "ExchangeAE.Core >= 1.0.0",
+      "ExchangeAE.Core.Shared >= 1.0.0",
       "ExchangeAE.EntityFrameworkCore >= 1.0.0"
     ]
   },
@@ -9615,6 +9616,9 @@
           "projectReferences": {
             "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/ExchangeAE.Application.Shared.csproj": {
               "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Application.Shared/ExchangeAE.Application.Shared.csproj"
+            },
+            "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj": {
+              "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core.Shared/ExchangeAE.Core.Shared.csproj"
             },
             "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core/ExchangeAE.Core.csproj": {
               "projectPath": "/Users/macbookpro/Desktop/Project/ExhangeAE/src/ExchangeAE.Core/ExchangeAE.Core.csproj"

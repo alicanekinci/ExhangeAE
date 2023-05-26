@@ -4,6 +4,7 @@
     <ProjectReference Include="..\ExchangeAE.Application.Shared\ExchangeAE.Application.Shared.csproj" />
     <ProjectReference Include="..\ExchangeAE.Core\ExchangeAE.Core.csproj" />
     <ProjectReference Include="..\ExchangeAE.EntityFrameworkCore\ExchangeAE.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\ExchangeAE.Core.Shared\ExchangeAE.Core.Shared.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
