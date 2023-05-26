@@ -45,7 +45,7 @@ builder.Services.AddSwaggerGen(c =>
         var securityScheme = new OpenApiSecurityScheme
         {
             Name = "Authorization",
-            Type = SecuritySchemeType.Http,
+            Type = SecuritySchemeType.ApiKey,
             Scheme = "Bearer",
             BearerFormat = "JWT",
             In = ParameterLocation.Header,
@@ -53,11 +53,21 @@ builder.Services.AddSwaggerGen(c =>
         };
         c.AddSecurityDefinition("Bearer", securityScheme);
 
-        var securityRequirement = new OpenApiSecurityRequirement
-        {
-            { securityScheme, new[] { "Bearer" } }
-        };
-        c.AddSecurityRequirement(securityRequirement);
+        c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new string[] {
+
+                        }
+                     }
+                });
     });
 
 var app = builder.Build();

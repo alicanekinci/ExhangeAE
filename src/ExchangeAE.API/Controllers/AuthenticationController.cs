@@ -19,24 +19,24 @@ public class AuthenticationController : BaseApiController
 
     [AllowAnonymous]
     [HttpPost("Generate Toekn")]
-    public IActionResult GenerateToken()
-     {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes("12345678901234567890123456789012345678901234567890"); // Replace with your secret key
+    public string GenerateToken()
+    {
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var key = Encoding.ASCII.GetBytes(_jwtSettings.Secret);
 
-            var tokenDescriptor = new SecurityTokenDescriptor
+        var tokenDescriptor = new SecurityTokenDescriptor
+        {
+            Subject = new ClaimsIdentity(new Claim[]
             {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                    new Claim(ClaimTypes.Name, "YourUsername") // Replace with your desired username
-                }),
-                Expires = DateTime.UtcNow.AddHours(1), // Set token expiration time
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
+                    new Claim(ClaimTypes.Name, "Admin")
+            }),
+            Expires = DateTime.UtcNow.AddMinutes(_jwtSettings.AccessTokenExpiration),
+            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+        };
 
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            var tokenString = tokenHandler.WriteToken(token);
+        var token = tokenHandler.CreateToken(tokenDescriptor);
+        var tokenString = tokenHandler.WriteToken(token);
 
-            return Ok(new { Token = tokenString });
-        }
+        return tokenString;
+    }
 }

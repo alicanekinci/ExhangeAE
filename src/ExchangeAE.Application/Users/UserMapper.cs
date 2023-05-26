@@ -4,41 +4,49 @@ namespace ExchangeAE.Users;
 
 public static class UserMapper
 {
-    public static User ToUserInsertEntity(this InsertUserInputDto input)
+    public static User ToUserEntity(this InsertUserInputDto input)
     {
         return new User
         {
-            Name = input.Name,
-            Email = input.Email,
-            Passwprd = input.Passwprd
+            FirstName = input.FirstName,
+            LastName = input.LastName,
+            Address = input.Address,
+            PhoneNumber = input.PhoneNumber
         };
     }
 
-    public static IList<UserListOutputDto> ToUserListOutputEntity(this IList<User> Users)
-    {
-        return (IList<UserListOutputDto>)Users.Select(userList => new UserListOutputDto
-        {
-            Id = userList.Id,
-            Name = userList.Name,
-            Email = userList.Email
-        }).ToList();
-    }
-
-    public static User ToUpdateUserEntity(this User User, UpdateUserInputDto input)
-    {
-        User.Id = input.Id;
-        User.Name = input.Name;
-        User.Email = input.Email;
-
-        return User;
-    }
-    public static UserOutputDto ToUserOutputEntity(this User User)
+    public static UserOutputDto ToUserOutput(this User user)
     {
         return new UserOutputDto
         {
-            Id = User.Id,
-            Name = User.Name,
-            Email = User.Email
+            Id = user.Id,
+            UserNo = user.UserNo,
+            FirstName = user.FirstName,
+            LastName = user.LastName,
+            Address = user.Address,
+            PhoneNumber = user.PhoneNumber
         };
+    }
+
+    public static User ToUpdatedUserEntity(this User user, UpdateUserInputDto input)
+    {
+        user.FirstName = input.FirstName;
+        user.LastName = input.LastName;
+
+        user.Address = input.Address;
+        user.PhoneNumber = input.PhoneNumber;
+
+        return user;
+    }
+
+    public static IList<UserListOutputDto> ToUserListOutput(this IList<User> users)
+    {
+        return users.Select(userListOutput => new UserListOutputDto
+        {
+            Id = userListOutput.Id,
+            UserNo = userListOutput.UserNo,
+            FirstName = userListOutput.FirstName,
+            LastName = userListOutput.LastName
+        }).ToList();
     }
 }

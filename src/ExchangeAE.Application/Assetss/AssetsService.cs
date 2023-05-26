@@ -15,6 +15,9 @@ public class AssetsService : IAssetsService
 
     public IResult Add(InsertAssetsInputDto input)
     {
+        if (input.Symbol.Trim().Length != 3)
+            return new ErrorResult(true, Messages.ErrorSymbol);
+
         _AssetsDal.Add(input.ToAssetsInsertEntity());
 
         return new SuccessResult(Messages.add);
@@ -43,6 +46,9 @@ public class AssetsService : IAssetsService
 
     public IResult Update(UpdateAssetsInputDto input)
     {
+        if (input.Symbol.Trim().Length != 3)
+            return new ErrorResult(true, Messages.ErrorSymbol);
+
         var updateAssets = _AssetsDal.Get(Assets => Assets.Id == input.Id);
         _AssetsDal.Update(updateAssets.ToUpdateAssetsEntity(input));
 

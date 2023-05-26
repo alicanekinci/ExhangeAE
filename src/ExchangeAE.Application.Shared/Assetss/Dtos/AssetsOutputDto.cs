@@ -5,5 +5,6 @@ public class AssetsOutputDto : EntityDto<int>
 {
     #region Property
     public string Title { get; set; }
+    public string Symbol { get; set; }
     #endregion
 }

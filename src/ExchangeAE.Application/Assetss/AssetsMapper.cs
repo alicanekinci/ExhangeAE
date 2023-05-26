@@ -8,16 +8,18 @@ public static class AssetsMapper
     {
         return new Assets
         {
-            Title = input.Title
+            Title = input.Title,
+            Symbol = input.Symbol.ToUpper()
         };
     }
 
-    public static IList<AssetsListOutputDto> ToAssetsListOutputEntity(this IList<Assets> Assetss)
+    public static IList<AssetsListOutputDto> ToAssetsListOutputEntity(this IList<Assets> assetss)
     {
-        return (IList<AssetsListOutputDto>)Assetss.Select(AssetsList => new AssetsListOutputDto
+        return (IList<AssetsListOutputDto>)assetss.Select(assetsList => new AssetsListOutputDto
         {
-            Id = AssetsList.Id,
-            Title = AssetsList.Title
+            Id = assetsList.Id,
+            Title = assetsList.Title,
+            Symbol = assetsList.Symbol
         }).ToList();
     }
 
@@ -25,15 +27,17 @@ public static class AssetsMapper
     {
         Assets.Id = input.Id;
         Assets.Title = input.Title;
+        Assets.Symbol = input.Symbol.ToUpper();
 
         return Assets;
     }
-    public static AssetsOutputDto ToAssetsOutputEntity(this Assets Assets)
+    public static AssetsOutputDto ToAssetsOutputEntity(this Assets assets)
     {
         return new AssetsOutputDto
         {
-            Id = Assets.Id,
-            Title = Assets.Title
+            Id = assets.Id,
+            Title = assets.Title,
+            Symbol = assets.Symbol
         };
     }
 }
